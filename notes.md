@@ -1,4 +1,6 @@
-function getCurrentTabUrl(callback) {
+Code to access currently active tab:
+
+```
   var queryInfo = {
     active: true,
     currentWindow: true
@@ -10,11 +12,4 @@ function getCurrentTabUrl(callback) {
     console.assert(typeof url == 'string', 'tab.url should be a string');
     callback(url);
   });
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-  getCurrentTabUrl(function(url) {
-    var header = '<b>Your current tab is:\n</b>';
-    document.querySelector('#message').innerHTML = header + url;
-  });
-});
+```
