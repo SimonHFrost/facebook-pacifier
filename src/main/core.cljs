@@ -1,2 +1,2 @@
-(ns hello-world.core)
+(ns main.core)
 (js/alert "Hello world.")
